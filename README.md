@@ -98,6 +98,26 @@ Similar to a Deep Link in Android, you need to add the host and scheme in the io
      </array>
 
 
+5. StreamSubscription
+
+            StreamSubscription? _streamSubscription;
+
+A StreamSubscription object to listen to incoming links when the app is in the foreground.
+With the help of addlistner predefine function we can detect any link changes in the app.
+
+
+             _streamSubscription = uriLinkStream.listen((Uri? uri) {
+                 //your code
+                  }
+
+Similarly, to let go of the resources when the app is terminated,
+close the StreamSubscription object in the dispose method.
+ 
+           @override
+        void dispose() {
+       _streamSubscription?.cancel(); 
+        super.dispose();
+           }
 
 
 
