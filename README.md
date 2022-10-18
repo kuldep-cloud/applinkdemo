@@ -14,6 +14,7 @@ A few resources to get you started if this is your first Flutter project:
 - [get: ](https://pub.dev/packages/get)
 - [fluttertoast: ](https://pub.dev/packages/fluttertoast)
 - img.png for overall overview.
+- /Users/kuldeepsingh/StudioProjects/applinkdemo/img.png
 
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,

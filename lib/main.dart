@@ -312,6 +312,17 @@ class _MyHomePageState extends State<MyHomePage>  {
   }
 
 
+  /*Here, you have done the following:
+
+  Displayed the Initial Link if received using the _initialURI variable
+  Added a check to display the incoming links only on mobile platforms
+  Displayed the host of the incoming link. We have already defined the host earlier
+  Similar to host, displayed the scheme of the incoming link configured earlier
+  Displayed the current or active incoming link using the _currentURI variable
+  Displayed the path coming along with the host and scheme
+  Displayed the error if it is not null*/
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
