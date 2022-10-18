@@ -119,6 +119,30 @@ close the StreamSubscription object in the dispose method.
         super.dispose();
            }
 
+6.how to get url data in app?
+
+split uri for getting data from uri
+
+        final allParamsList = uri.toString().split("/");
 
 
+logic for getting the particular key data from split variable
+        
+        final userName,userId;
+        for (int i = 0; i < allParamsList.length; i++) {
+          if (allParamsList[i].contains("username")) {
+            final usernameVariable = allParamsList[i];
+            userName = usernameVariable.split("username=").last;
+          } else if (allParamsList[i].contains("userID")) {
+            final usernameVariable = allParamsList[i];
+            userID = usernameVariable.split("userID=").last;
+          }
+        }
+
+7.How to navigate to a particular screen in ui?
+
+    if(uri.toString().contains("profileDetails")){
+      //get key vale code here
+      //navigation code here of specific screen with arguments
+      }
 
